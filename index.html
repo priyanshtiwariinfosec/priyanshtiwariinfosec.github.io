@@ -553,7 +553,7 @@ priyansh-tiwari — SOC analyst, Bangalore
   </div>
 
   <div class="stats load d5" role="list">
-    <div class="stat" role="listitem"><b data-count="3">3</b><span>Hands-on security lab projects</span></div>
+    <div class="stat" role="listitem"><b data-count="4">4</b><span>Hands-on security projects</span></div>
     <div class="stat" role="listitem"><b data-count="6">6</b><span>Security tools in daily practice</span></div>
     <div class="stat" role="listitem"><b>CEH</b><span>EC-Council Certified Ethical Hacker</span></div>
     <div class="stat" role="listitem"><b>2026</b><span>Advanced Diploma in Cyberdefence</span></div>
@@ -619,7 +619,7 @@ priyansh-tiwari — SOC analyst, Bangalore
       <div class="skill"><span class="mono">Network</span><h3>Traffic analysis</h3><div class="chips"><span class="chip">Wireshark</span><span class="chip">TCP/IP</span><span class="chip">DNS</span><span class="chip">IDS/IPS</span></div></div>
       <div class="skill"><span class="mono">Assess</span><h3>Vulnerability testing</h3><div class="chips"><span class="chip">Nmap</span><span class="chip">Metasploit</span><span class="chip">Burp Suite</span><span class="chip">OWASP Top 10</span></div></div>
       <div class="skill"><span class="mono">Hunt</span><h3>Threat intelligence</h3><div class="chips"><span class="chip">MITRE ATT&amp;CK</span><span class="chip">Maltego</span><span class="chip">Threat hunting</span><span class="chip">Endpoint security</span></div></div>
-      <div class="skill"><span class="mono">Platforms</span><h3>Systems &amp; scripting</h3><div class="chips"><span class="chip">Windows</span><span class="chip">Kali Linux</span><span class="chip">Ubuntu</span><span class="chip">Python</span><span class="chip">Bash</span></div></div>
+      <div class="skill"><span class="mono">Platforms</span><h3>Systems &amp; scripting</h3><div class="chips"><span class="chip">Windows</span><span class="chip">Kali Linux</span><span class="chip">Ubuntu</span><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">Machine learning</span></div></div>
     </div>
   </section>
 
@@ -627,7 +627,18 @@ priyansh-tiwari — SOC analyst, Bangalore
     <div class="sec-head reveal"><h2>Projects</h2><span class="mono">lab case files</span></div>
     <div class="findings">
       <article class="finding reveal">
-        <div><div class="id">CASE-001 · Blue team</div><h3>Threat detection using SIEM</h3></div>
+        <div><div class="id">CASE-001 · AI security</div><h3>PhishGuard: AI phishing URL detector</h3></div>
+        <span class="tag high">ML detection</span>
+        <ul>
+          <li>Built a machine-learning phishing URL detector trained on 235,000+ real URLs (PhiUSIIL dataset, UCI 2024), using 22 engineered features such as brand impersonation, look-alike domains (amaz0n), suspicious TLDs and IP-based links.</li>
+          <li>Found shortcut learning in the dataset: a model with 99.78% accuracy flagged every real website as phishing. Debiased the data and raised the real-world check from 15/30 to 30/30 (93.96% test accuracy).</li>
+          <li>Shipped a Flask web app and REST API with explainable verdicts, a hybrid allowlist + Random Forest design, and an XSS-safe interface.</li>
+        </ul>
+        <div class="flow" style="--c:var(--high)"><span>Collect 235k URLs</span><span>Fix dataset bias</span><span>Train model</span><span>Explain verdict</span></div>
+        <div class="meta"><span class="attack">Python · scikit-learn · Random Forest · Flask</span><a class="btn" href="https://github.com/priyanshtiwariinfosec/phishguard" target="_blank" rel="noopener">View code on GitHub</a></div>
+      </article>
+      <article class="finding reveal">
+        <div><div class="id">CASE-002 · Blue team</div><h3>Threat detection using SIEM</h3></div>
         <span class="tag blue">Detection</span>
         <ul>
           <li>Monitored and analyzed security logs in Splunk to spot suspicious activity, security alerts and potential threats.</li>
@@ -638,7 +649,7 @@ priyansh-tiwari — SOC analyst, Bangalore
         <div class="meta"><span class="attack">Splunk · Alert triage · IOC analysis</span></div>
       </article>
       <article class="finding reveal">
-        <div><div class="id">CASE-002 · Network</div><h3>Network traffic analysis lab</h3></div>
+        <div><div class="id">CASE-003 · Network</div><h3>Network traffic analysis lab</h3></div>
         <span class="tag net">Analysis</span>
         <ul>
           <li>Investigated suspicious network traffic in Wireshark with packet-level analysis during simulated security incidents.</li>
@@ -648,7 +659,7 @@ priyansh-tiwari — SOC analyst, Bangalore
         <div class="meta"><span class="attack">Wireshark · TCP/IP · DNS · HTTP/S</span></div>
       </article>
       <article class="finding reveal">
-        <div><div class="id">CASE-003 · Offensive lab</div><h3>Vulnerability assessment &amp; CTF labs</h3></div>
+        <div><div class="id">CASE-004 · Offensive lab</div><h3>Vulnerability assessment &amp; CTF labs</h3></div>
         <span class="tag red">Assessment</span>
         <ul>
           <li>Ran vulnerability scanning, reconnaissance and service enumeration with Nmap and Metasploit in controlled lab environments.</li>
